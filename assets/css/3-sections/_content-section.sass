@@ -1,0 +1,134 @@
+section.content
+    position: relative
+    z-index: 2
+    margin-bottom: 300px
+    background: white
+    article
+        padding: 100px 0
+        max-width: 640px
+        margin: 0 auto
+        text-align: center
+        h1
+            color: #ccc
+            font-weight: 300
+        
+
+        
+        .clothes-pics
+            margin-bottom: 100px
+            figure
+                margin-bottom: 20px
+                position: relative
+                opacity: 0
+                transform: translateX(20px)
+                transition: all .4s ease-in-out
+                overflow: hidden
+                cursor: pointer
+                
+                img
+                    display: block
+                    transform: scale(1)
+                    transition: all .4s ease-in-out
+                &:hover
+                    figcaption
+                        left: 0%
+                    img
+                        transform: scale(1.2)
+                
+                &.is-showing
+                    opacity: 1
+                    transform: translateX(0px)
+            figcaption
+                position: absolute
+                bottom: 10px
+                left: -100%
+                background: 
+                    color: black
+                color: white
+                padding: 2px 8px
+                font-size: 11px
+                transition: all .4s ease-in-out
+                
+                
+        .large-window
+            margin-top: 80px
+            margin-bottom: 80px
+            height: 640px
+            border-radius: 50%
+            position: relative
+            background: 
+                image: url(/assets/img/model2.jpg)
+                position: center 0px
+                repeat: repeat-y
+                attachment: fixed
+                
+            .window-tint
+                background:
+                    color: rgba(black, .5)
+                position: absolute
+                top: 0
+                left: 0
+                bottom: 0
+                right: 0
+                border-radius: 50%
+                display: flex
+                justify-content: center
+                align-items: center
+                
+                .promo-text
+                    color: white
+                    font-weight: 100
+                    font-size: 50px
+                    line-height: 1.2
+                    
+                    strong 
+                        font-weight: 700;
+                        display: block
+                        font-size: 30px
+                        
+                        span
+                            font:
+                                weight: 300
+                                size: 18px
+                                style: italic
+                            color: rgba(white, .6)
+                            
+                    .window-cta
+                        font-size: 20px
+                        font-weight: 500
+                        text-decoration: none
+                        color: white
+                        border: 1px solid white
+                        padding: 10px 20px
+                        transition: all .3s ease-in-out
+                        
+                        
+                        &:hover
+                           background: white
+                           color: black
+                        
+        .blog-posts
+            margin-top: 100px
+            margin-bottom: 100px
+            
+            .post
+                border: 1px solid #e1e1e1
+                padding: 20px 20px 0
+                position: relative
+            
+            .post-1
+                transform: translate(100px,20px)
+                
+            .post-2
+                z-index: 2
+            .post-3
+                transform: translate(-100px,20px)
+                            
+                
+                
+                
+                
+                
+                
+                
+    
